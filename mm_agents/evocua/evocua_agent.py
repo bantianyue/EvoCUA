@@ -438,7 +438,15 @@ Previous actions:
                         pyautogui_code.append("WAIT")
 
                     elif action == "terminate":
-                        pyautogui_code.append("DONE")
+                        # Termination should respect status:
+                        # - success -> DONE
+                        # - failure -> FAIL
+                        # Backward compatible: missing status defaults to success.
+                        status = args.get("status", "success")
+                        if str(status).lower() == "failure":
+                            pyautogui_code.append("FAIL")
+                        else:
+                            pyautogui_code.append("DONE")
 
                     elif action == "mouse_move":
                         if "coordinate" in args:

@@ -2,7 +2,7 @@
 
 EvoCUA是一个Computer Use Agent（多模态模型 + 配套的Agent脚手架），能够接收用户任务指令与PC截图，与PC环境进行多轮交互，操作Chrome、Excel、PPT、VSCode等软件完成用户指令。
 
-我们提出了一套数据合成、模型训练方法，在多个开源多模态模型上实验，均能在不损失模型通用能力的情况下，显著提升模型的Computer Use能力，在OSWorld Benchmark上取得了开源SOTA 效果，max_steps 50的设置下任务完成率为50.3%，详见https://os-world.github.io/。
+我们提出了一套数据合成、模型训练方法，在多个开源多模态模型上实验，均能在不损失模型通用能力的情况下，显著提升模型的Computer Use能力，在OSWorld Benchmark上取得了开源SOTA 效果，max_steps 50的设置下任务完成率为50.3%，详见https://os-world.github.io/，技术报告整理中，不久后发布。
 
 
 ## 目录结构

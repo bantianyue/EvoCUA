@@ -124,7 +124,8 @@ def build_s2_tools_def(description_prompt):
                     "action": {
                         "description": S2_ACTION_DESCRIPTION,
                         "enum": ["key", "type", "mouse_move", "left_click", "left_click_drag", 
-                                 "right_click", "middle_click", "double_click", "triple_click", "scroll", "wait", "terminate", "key_down", "key_up"], 
+                                 "right_click", "middle_click", "double_click", "triple_click", "scroll", 
+                                 "wait", "terminate", "key_down", "key_up"], 
                         "type": "string"
                     },
                     "keys": {"description": "Required only by `action=key`.", "type": "array"}, 

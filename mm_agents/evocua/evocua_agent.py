@@ -336,7 +336,7 @@ Previous actions:
                                 cleaned_keys.append(key)
                         return cleaned_keys
 
-                    if action == "left_click":
+                    if action == "left_click" or action == "click":
                         if "coordinate" in args:
                             x, y = args["coordinate"]
                             adj_x, adj_y = adjust_coordinates(x, y)
@@ -511,7 +511,11 @@ Previous actions:
             process_tool_call("\n".join(current_tool_call))
 
         if not low_level_instruction and len(pyautogui_code) > 0:
-            action_type = pyautogui_code[0].split(".", 1)[1].split("(", 1)[0]
+            first_action = pyautogui_code[0]
+            if "." in first_action:
+                action_type = first_action.split(".", 1)[1].split("(", 1)[0]
+            else:
+                action_type = first_action.lower()
             low_level_instruction = f"Performing {action_type} action"
 
         return low_level_instruction, pyautogui_code

@@ -10,7 +10,7 @@
 
 [English](./README.md) | [中文](./README_CN.md)
 
-<img src="assets/images/osworld_leaderboard.png" width="900" alt="OSWorld Leaderboard">
+<img src="assets/images/osworld_leaderboard.png" width="700" alt="OSWorld Leaderboard">
 
 **🥇 开源模型第一 | OSWorld 排行榜（2026年1月）**
 
@@ -21,12 +21,9 @@
 ## 🌟 亮点
 
 - 🥇 **开源模型第一**：达到 **56.7%** 任务完成率，**开源模型中排名第一**
-- 📈 **比 OpenCUA-72B 高 11.7%**（45.0%→56.7%）：以更少的参数量（32B vs 72B）显著超越此前开源 SOTA
-- 🚀 **比 Qwen3-VL Thinking提升 15.1%**（41.6%→56.7%）：步数减半（100→50），验证训练方法有效性
-- 🧠 **通用多模态大模型**：基于 Qwen3VL-32B 训练，在提升 Computer Use 能力的同时保持模型通用能力
-- 🖥️ **端到端电脑自动化**：通过截图和自然语言指令，操作真实桌面环境
-- 🔄 **多轮交互能力**：通过自然语言指令，流畅操作 Chrome、Excel、PPT、VSCode 等多种软件
-- 📊 **创新训练方法**：我们提出的数据合成与模型训练方法，能在不损失模型通用能力的情况下，显著提升多个开源多模态模型的 Computer Use 能力
+- 📈 **显著提升**：比 OpenCUA-72B 高 11.7%（45.0%→56.7%），比 Qwen3-VL Thinking 高 15.1%（41.6%→56.7%），参数更少、步数减半
+- 🖥️ **端到端多轮自动化**：通过截图和自然语言指令，流畅操作 Chrome、Excel、PPT、VSCode 等软件
+- 🧠 **创新训练方法**：我们的数据合成与训练方法在提升 Computer Use 能力的同时，保持模型通用能力
 
 ---
 
@@ -45,13 +42,7 @@
 | ... | ... | ... | ... | ... | ... |
 | 13 | Qwen3-VL-Flash | 🟢 开源 | 通用模型 | 100 | 41.6% |
 
-**核心亮点：**
-- 🥇 **开源模型第一**
-- 📈 比 OpenCUA-72B **高 11.7%**（45.0%→56.7%），参数量更少（32B vs 72B）
-- 🚀 比 Qwen3-VL 基座模型**提升 15.1%**（41.6%→56.7%），步数减半（100→50）
-- ⚡ 仅用 **50 步**即达到竞争力效果，其他模型多使用 100 步
-
-> 注：人类在 OSWorld 上的表现仍显著高于当前最佳模型，说明该领域仍有很大的提升空间。
+> EvoCUA 是**开源模型第一**，仅用 **50 步**即达到竞争力效果。人类表现仍显著高于当前最佳模型，领域仍有很大提升空间。
 
 ---
 
@@ -158,12 +149,7 @@ cp env.template .env
 
 ## 🙏 致谢
 
-衷心感谢开源社区对 Computer Use Agent 领域的杰出贡献：
-
-- **[OSWorld](https://github.com/xlang-ai/OSWorld)** — 感谢 Tianbao Xie 及团队创建了 Computer Use Agent 领域最具影响力的基准测试
-- **[OpenCUA](https://github.com/xlang-ai/OpenCUA)** — 感谢 Xinyuan Wang 及团队在开源 Computer Use Agent 研究和 AgentNet 数据集方面的开创性工作
-
-我们致力于回馈社区，将持续开源我们的研究成果，推动领域发展。
+衷心感谢开源社区对 Computer Use Agent 领域的杰出贡献。特别感谢 **Xinyuan Wang**（[OpenCUA](https://github.com/xlang-ai/OpenCUA)）和 **Tianbao Xie**（[OSWorld](https://github.com/xlang-ai/OSWorld)）在评测、讨论和各种反馈方面给予的宝贵支持，他们的开创性工作极大地启发和推动了我们的研究。我们致力于回馈社区，将持续开源我们的研究成果，推动领域发展。
 
 ---
 

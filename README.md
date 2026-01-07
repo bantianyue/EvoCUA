@@ -10,7 +10,7 @@
 
 [English](./README.md) | [中文](./README_CN.md)
 
-<img src="assets/images/osworld_leaderboard.png" width="900" alt="OSWorld Leaderboard">
+<img src="assets/images/osworld_leaderboard.png" width="700" alt="OSWorld Leaderboard">
 
 **🥇 #1 Open-Source Model on OSWorld Leaderboard (Jan 2026)**
 
@@ -21,12 +21,9 @@
 ## 🌟 Highlights
 
 - 🥇 **#1 Open-Source Model on OSWorld**: Achieves **56.7%** task completion rate, **#1 among all open-source models**
-- 📈 **+11.7% over OpenCUA-72B** (45.0%→56.7%): Significantly outperforms the previous open-source SOTA while using fewer parameters (32B vs 72B)
-- 🚀 **+15.1% over Qwen3-VL Thinking** (41.6%→56.7%): Improves with half the steps (100→50), demonstrating effective training methodology
-- 🧠 **General-Purpose Multimodal Model**: Built on Qwen3VL-32B, retains strong general capabilities while excelling at computer use tasks
-- 🖥️ **End-to-End Computer Automation**: Operates real desktop environments through screenshots and natural language instructions
-- 🔄 **Multi-Turn Interaction**: Seamlessly operates Chrome, Excel, PowerPoint, VSCode, and more through natural language instructions
-- 📊 **Novel Training Methodology**: Our data synthesis and training approach consistently improves Computer Use capability across multiple open-source VLMs without degrading general performance
+- 📈 **Significant Improvements**: +11.7% over OpenCUA-72B (45.0%→56.7%), +15.1% over Qwen3-VL thinking (41.6%→56.7%), with fewer parameters and half the steps
+- 🖥️ **End-to-End Multi-Turn Automation**: Operates Chrome, Excel, PowerPoint, VSCode and more through screenshots and natural language instructions
+- 🧠 **Novel Training Method**: Our data synthesis and training approach consistently improves Computer Use capability across multiple open-source VLMs without degrading general performance
 
 ---
 
@@ -40,18 +37,12 @@
 | **4** | **EvoCUA-20260105 (Ours)** | **🟢 Open** | **General** | **50** | **56.7% 🥇** |
 | 5 | DeepMiner-Mano-72B | 🔒 Closed | Specialized | 100 | 53.9% |
 | 6 | UI-TARS-2-2509 | 🟢 Open | General | 100 | 53.1% |
-| 7 | EvoCUA *(Previous Version)* | 🔒 Closed | General | 50 | 50.3% |
+| 7 | EvoCUA (Previous Version) | 🔒 Closed | General | 50 | 50.3% |
 | 8 | OpenCUA-72B | 🟢 Open | Specialized | 100 | 45.0% |
 | ... | ... | ... | ... | ... | ... |
 | 13 | Qwen3-VL-Flash | 🟢 Open | General | 100 | 41.6% |
 
-**Key Highlights:**
-- 🥇 **#1 among ALL open-source models**
-- 📈 **+11.7%** higher than OpenCUA-72B (45.0%→56.7%), with fewer parameters (32B vs 72B)
-- 🚀 **+15.1%** improvement over Qwen3-VL model (41.6%→56.7%) with half the steps (100→50)
-- ⚡ Achieves competitive results with only **50 steps** while others use 100 steps
-
-> Note: Human-level performance on OSWorld remains significantly higher, indicating substantial room for improvement in the field.
+> EvoCUA is **#1 among all open-source models**, achieving competitive results with only **50 steps**. Human-level performance remains significantly higher, indicating substantial room for improvement.
 
 ---
 
@@ -159,12 +150,7 @@ cp env.template .env
 
 ## 🙏 Acknowledgements
 
-We sincerely thank the open-source community for their outstanding contributions to the Computer Use Agent field:
-
-- **[OSWorld](https://github.com/xlang-ai/OSWorld)** — Tianbao Xie and team for creating the most influential benchmark in the Computer Use Agent domain
-- **[OpenCUA](https://github.com/xlang-ai/OpenCUA)** — Xinyuan Wang and team for pioneering open-source Computer Use Agent research.
-
-We are committed to giving back to the community and will continue to open-source our research to advance the field.
+We sincerely thank the open-source community for their outstanding contributions to the Computer Use Agent field. We are grateful to **Xinyuan Wang** ([OpenCUA](https://github.com/xlang-ai/OpenCUA)) and **Tianbao Xie** ([OSWorld](https://github.com/xlang-ai/OSWorld)) for their insightful discussions, valuable feedback on evaluation, and continuous support throughout this project. Their pioneering work has greatly inspired and advanced our research. We are committed to giving back to the community and will continue to open-source our research to advance the field.
 
 ---
 

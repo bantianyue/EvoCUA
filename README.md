@@ -62,7 +62,12 @@ pip install -r requirements.txt
 
 ### Model Download & Deployment
 
-EvoCUA requires downloading the model weights from HuggingFace and deploying with **vLLM 0.12** as an OpenAI-compatible inference server.
+EvoCUA requires downloading the model weights from HuggingFace and deploying with **vLLM** as an OpenAI-compatible inference server.
+
+Recommended versions:
+- torch: 2.8.0+cu126
+- transformers: 4.57.3
+- vllm: 0.11.0
 
 ```bash
 # 1) Download model weights
@@ -71,7 +76,6 @@ huggingface-cli download meituan/EvoCUA-32B-20260105 \
   --local-dir-use-symlinks False
 
 # 2) Launch vLLM serving (recommend separate environment)
-pip install "vllm==0.12.*"
 vllm serve /path/to/EvoCUA-32B \
   --served-model-name EvoCUA \
   --host 0.0.0.0 \
@@ -79,6 +83,9 @@ vllm serve /path/to/EvoCUA-32B \
   --tensor-parallel-size 2
 
 # 3) Set environment variables
+# Environment variables can be configured in .env file (see env.template for reference):
+cp env.template .env
+# Edit .env with your configurations, e.g.,
 export OPENAI_API_KEY="dummy"
 export OPENAI_BASE_URL="http://127.0.0.1:8080/v1"
 ```
@@ -122,16 +129,6 @@ EvoCUA/
 
 ---
 
-## 🔧 Configuration
-
-Environment variables can be configured in `.env` file (see `env.template` for reference):
-
-```bash
-cp env.template .env
-# Edit .env with your configurations
-```
-
----
 
 ## 📖 About OSWorld
 

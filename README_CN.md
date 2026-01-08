@@ -62,7 +62,12 @@ pip install -r requirements.txt
 
 ### 模型下载与部署
 
-请先从 HuggingFace 下载 EvoCUA 模型权重，并使用 **vLLM 0.12** 将其部署为兼容 OpenAI 接口的推理服务。
+请先从 HuggingFace 下载 EvoCUA 模型权重，并使用 **vLLM** 将其部署为兼容 OpenAI 接口的推理服务。
+
+推荐版本：
+- torch: 2.8.0+cu126
+- transformers: 4.57.3
+- vllm: 0.11.0
 
 ```bash
 # 1) 下载模型权重
@@ -71,7 +76,6 @@ huggingface-cli download meituan/EvoCUA-32B-20260105 \
   --local-dir-use-symlinks False
 
 # 2) 启动 vLLM 推理服务（建议使用单独的环境）
-pip install "vllm==0.12.*"
 vllm serve /path/to/EvoCUA-32B \
   --served-model-name EvoCUA \
   --host 0.0.0.0 \
@@ -79,6 +83,9 @@ vllm serve /path/to/EvoCUA-32B \
   --tensor-parallel-size 2
 
 # 3) 设置环境变量
+# 环境变量可通过 .env 文件进行配置（请参考 env.template）：
+cp env.template .env
+# 编辑 .env 文件，填入您的具体配置，例如：
 export OPENAI_API_KEY="dummy"
 export OPENAI_BASE_URL="http://127.0.0.1:8080/v1"
 ```
@@ -122,16 +129,6 @@ EvoCUA/
 
 ---
 
-## 🔧 配置指南
-
-环境变量可通过 `.env` 文件进行配置（请参考 `env.template`）：
-
-```bash
-cp env.template .env
-# 编辑 .env 文件，填入您的具体配置
-```
-
----
 
 ## 📖 关于 OSWorld
 

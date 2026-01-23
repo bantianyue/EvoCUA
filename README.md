@@ -56,7 +56,7 @@
 
 ---
 
-## 🎬 Demo展示
+## 🎬 Demo
 
 instruction：I want to use rbenv to manage my Ruby versions, but it's not installed on my system. Could you help me search online for how to install rbenv and set it up properly so I can use 'rbenv' command in my terminal?
 

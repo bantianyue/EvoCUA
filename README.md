@@ -1,18 +1,3 @@
----
-license: apache-2.0
-language:
-  - en
-  - zh
-base_model:
-  - Qwen/Qwen3-VL-32B
-library_name: transformers
-pipeline_tag: image-text-to-text
-tags:
-  - computer-use
-  - gui-agent
-  - multimodal
-  - osworld
----
 <div align="center">
 
 # EvoCUA: Evolving Computer Use Agent

@@ -56,6 +56,14 @@
 
 ---
 
+## 🎬 Demo展示
+
+模型上网查询如何配置rbenv开发环境并帮用户安装：
+
+<img src="assets/images/animation_show_case.gif" width="900" alt="Demo展示动图">
+
+---
+
 ## 🚀 Quick Start
 
 ### Installation

@@ -58,7 +58,7 @@
 
 ## 🎬 Demo展示
 
-模型上网查询如何配置rbenv开发环境并帮用户安装：
+instruction：I want to use rbenv to manage my Ruby versions, but it's not installed on my system. Could you help me search online for how to install rbenv and set it up properly so I can use 'rbenv' command in my terminal?
 
 <img src="assets/images/animation_show_case.gif" width="900" alt="Demo展示动图">
 

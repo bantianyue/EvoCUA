@@ -1,3 +1,18 @@
+---
+license: apache-2.0
+language:
+  - en
+  - zh
+base_model:
+  - Qwen/Qwen3-VL-32B
+library_name: transformers
+pipeline_tag: image-text-to-text
+tags:
+  - computer-use
+  - gui-agent
+  - multimodal
+  - osworld
+---
 <div align="center">
 
 # EvoCUA: Evolving Computer Use Agent
@@ -21,7 +36,7 @@
 
 ## 📢 Updates
 
-- **2026.01.22**: Released [Technical Report](./tech_report.pdf) 📄 🆕
+- **2026.01.22**: Released [Technical Report](https://arxiv.org/abs/2601.15876) 📄 🆕
 - **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — achieves **46.1%** on OSWorld, **competitive with 72B-level models using fewer parameters!**
 - **2026.01.05**: Released [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) with **56.7%** on OSWorld, achieving **#1** among open-source models 🥇
 
@@ -152,7 +167,7 @@ EvoCUA/
   - [meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) - OSWorld Score: **56.7%** 🥇
   - [meituan/EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) - OSWorld Score: **46.06%** 🆕
 - 📊 **OSWorld Benchmark**: [os-world.github.io](https://os-world.github.io/)
-- 📄 **Technical Report**: [tech_report.pdf](./tech_report.pdf)
+- 📄 **Technical Report**: [tech_report.pdf](https://arxiv.org/abs/2601.15876)
 - 🚀 **More Model Sizes**: More models of various sizes are on the way!
 
 ---

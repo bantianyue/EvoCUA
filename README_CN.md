@@ -20,7 +20,7 @@
 ---
 
 ## 📢 更新日志
-
+- **2026.01.23**: EvoCUA 在 [Hugging Face Daily Papers](https://huggingface.co/papers/2601.15876) **中排名 (#1)** 🏆 🆕
 - **2026.01.22**：发布[EvoCUA技术报告](https://arxiv.org/abs/2601.15876) 📄 🆕
 - **2026.01.13**：发布 [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — OSWorld 得分 **46.1%**，**以更小的参数量实现与 72B 级别开源模型相当的性能！**
 - **2026.01.05**：发布 [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105)，OSWorld 得分 **56.7%**，登顶**开源模型榜首** 🥇
@@ -61,7 +61,6 @@
 模型上网查询如何配置rbenv开发环境并帮用户安装：
 
 <img src="assets/images/animation_show_case.gif" width="900" alt="Demo展示动图">
-
 
 ---
 
@@ -190,6 +189,11 @@ EvoCUA/
 ## 📜 开源协议
 
 本项目基于 Apache 2.0 协议开源，详见 [LICENSE](./LICENSE) 文件。
+
+---
+
+## 📈 Star增长
+[![Star History Chart](https://api.star-history.com/svg?repos=meituan/EvoCUA&type=Date)](https://star-history.com/#meituan/EvoCUA&Date)
 
 ---
 

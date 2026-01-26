@@ -56,13 +56,6 @@
 
 ---
 
-## 📈 Star Growth
-[![Star History Chart](https://api.star-history.com/svg?repos=meituan/EvoCUA&type=Date)](https://star-history.com/#meituan/EvoCUA&Date)
-
----
-
----
-
 ## 🚀 Quick Start
 
 ### Installation
@@ -188,6 +181,11 @@ If you find EvoCUA useful in your research, please consider citing:
 ## 📜 License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 📈 Star Growth
+[![Star History Chart](https://api.star-history.com/svg?repos=meituan/EvoCUA&type=Date)](https://star-history.com/#meituan/EvoCUA&Date)
 
 ---
 

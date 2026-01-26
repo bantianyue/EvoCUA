@@ -20,8 +20,8 @@
 ---
 
 ## 📢 Updates
-
-- **2026.01.22**: Released [Technical Report](https://arxiv.org/abs/2601.15876) 📄 🆕
+- **2026.01.23**: EvoCUA ranked **#1** on [Hugging Face Daily Papers](https://huggingface.co/papers/2601.15876) 🏆 🆕
+- **2026.01.22**: Released [EvoCUA Technical Report](./tech_report.pdf) 📄 🆕
 - **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — achieves **46.1%** on OSWorld, **competitive with 72B-level models using fewer parameters!**
 - **2026.01.05**: Released [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) with **56.7%** on OSWorld, achieving **#1** among open-source models 🥇
 
@@ -56,11 +56,10 @@
 
 ---
 
-## 🎬 Demo
+## 📈 Star Growth
+[![Star History Chart](https://api.star-history.com/svg?repos=meituan/EvoCUA&type=Date)](https://star-history.com/#meituan/EvoCUA&Date)
 
-instruction：I want to use rbenv to manage my Ruby versions, but it's not installed on my system. Could you help me search online for how to install rbenv and set it up properly so I can use 'rbenv' command in my terminal?
-
-<img src="assets/images/animation_show_case.gif" width="900" alt="Demo展示动图">
+---
 
 ---
 
@@ -160,7 +159,7 @@ EvoCUA/
   - [meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) - OSWorld Score: **56.7%** 🥇
   - [meituan/EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) - OSWorld Score: **46.06%** 🆕
 - 📊 **OSWorld Benchmark**: [os-world.github.io](https://os-world.github.io/)
-- 📄 **Technical Report**: [tech_report.pdf](https://arxiv.org/abs/2601.15876)
+- 📄 **Technical Report**: [tech_report.pdf](./tech_report.pdf)
 - 🚀 **More Model Sizes**: More models of various sizes are on the way!
 
 ---
@@ -176,12 +175,11 @@ We sincerely thank the open-source community for their outstanding contributions
 If you find EvoCUA useful in your research, please consider citing:
 
 ```bibtex
-@misc{evocua2026,
+@article{xue2026evocua,
   title={EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience},
-  author={Chong Peng* and Taofeng Xue*},
-  year={2026},
-  url={https://github.com/meituan/EvoCUA},
-  note={* Equal contribution}
+  author={Xue, Taofeng and Peng, Chong and Huang, Mianqiu and Guo, Linsen and Han, Tiancheng and Wang, Haozhe and Wang, Jianing and Zhang, Xiaocheng and Yang, Xin and Zhao, Dengchang and others},
+  journal={arXiv preprint arXiv:2601.15876},
+  year={2026}
 }
 ```
 
